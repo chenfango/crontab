@@ -1,6 +1,4 @@
 {
-  "API接口服务端口": "提供任务增删改查服务",
-  "apiPort": 8070,
 
   "API接口读超时": "单位是毫秒",
   "apiReadTimeout": 5000,
@@ -21,5 +19,12 @@
   "mongodbUri": "mongodb://127.0.0.1:27017",
 
   "mongodb连接超时时间": "单位毫秒",
-  "mongodbConnectTimeout": 5000
+  "mongodbConnectTimeout": 5000,
+
+  "日志批次大小": "为了减少mongodb网络往返,打包成一批写入",
+  "jobLogBatchSize": 100,
+
+  "日志自动提交超时": "在批次未达到阀值之前，超时自动提交",
+  "jobLogCommitTimeout": 1000
+
 }
